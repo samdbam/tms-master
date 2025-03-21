@@ -586,10 +586,9 @@
   },
   {
     "fieldname": "hbl",
-    "fieldtype": "Link",
-    "label": "HB/L",
-    "options": "HBL Info Am",
-    "allow_multiple": 1
+    "fieldtype": "Table",
+   "label": "HB/L",
+   "options": "HBL Info Am Link"
  },
   {
    "fieldname": "container_item_tab",
