@@ -1,0 +1,1399 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-10-25 16:49:56.030057",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_tab",
+  "naming_series",
+  "shipping_type",
+  "column_break_spt8",
+  "company",
+  "section_break_u0es",
+  "file_no",
+  "post_date",
+  "forwarding_agent",
+  "op",
+  "column_break_jnhv",
+  "mbl_no",
+  "oversea_agent",
+  "co_loader",
+  "carrier_contract_no",
+  "column_break_qkfc",
+  "office",
+  "carrier",
+  "agent_ref_no",
+  "direct_master",
+  "column_break_som8",
+  "bl_type",
+  "bl_acct_carrier",
+  "sub_bl_no",
+  "direct_master_section",
+  "customer_ref_no",
+  "customer",
+  "sales",
+  "column_break_38bd",
+  "shipper",
+  "bill_to",
+  "column_break_tq5b",
+  "consignee",
+  "sales_type",
+  "column_break_y1qz",
+  "notify",
+  "cargo_type",
+  "vessel_details_section",
+  "vessel",
+  "port_of_loading",
+  "place_of_delivery_del",
+  "column_break_rv4k",
+  "voyage",
+  "etd",
+  "place_of_delivery_eta",
+  "atd",
+  "column_break_sobg",
+  "cy_location",
+  "port_of_discharge",
+  "final_destination",
+  "ata",
+  "freight_details_section",
+  "freight",
+  "obl_type",
+  "latest_gate_in",
+  "column_break_uuun",
+  "ship_mode",
+  "obl_received",
+  "edit_obl_received",
+  "column_break_ewb5",
+  "business_referred_by",
+  "service_term",
+  "released_date",
+  "edit_release_date",
+  "section_break_n5jq",
+  "items",
+  "schedules_and_rate_tab",
+  "origin",
+  "departure_date",
+  "origin_service_mode",
+  "column_break_5vya",
+  "destination",
+  "duration",
+  "destination_service_mode",
+  "schedule_rate_reference_section",
+  "reference_doctype",
+  "column_break_zznb",
+  "reference_name",
+  "schedule_rate_details_section",
+  "schedule_and_rate",
+  "get_item",
+  "fetch_items",
+  "hbl_information_tab",
+  "hbl",
+  "container_item_tab",
+  "container",
+  "track",
+  "section_break_d1iq",
+  "remarks",
+  "column_break_2g0j",
+  "description",
+  "bill_of_exchange_tab",
+  "amount_in_figures",
+  "bl_date_if_applicable",
+  "place_of_issue",
+  "date_of_issue",
+  "at",
+  "pay_to_the_order_of",
+  "the_sum_of_amount_in_words",
+  "column_break_xjzt",
+  "drawn_under",
+  "dated",
+  "issued_by",
+  "drawee_sign",
+  "authorized_sign",
+  "column_break_togs",
+  "notify_party",
+  "additional_party",
+  "additional_info",
+  "orginal_bill_of_lading",
+  "incoterms",
+  "payable_at",
+  "shipped_date",
+  "forwarding_instructions_section",
+  "buyer_ref",
+  "export_declaration_number",
+  "declared_value",
+  "column_break_ufmt",
+  "special_instructions",
+  "letter_credit_no",
+  "column_break_dunj",
+  "buyer_consignee",
+  "cmr_consignment_note_section",
+  "annexed_documents",
+  "sender",
+  "place_of_delivery_goods",
+  "successive_carrier",
+  "taking_goods",
+  "paid_by",
+  "established",
+  "reductions",
+  "balance",
+  "column_break_cbgj",
+  "carriers_reservation_and_observations",
+  "statistical_number",
+  "volume",
+  "class",
+  "number",
+  "special_aruguments",
+  "supplement_charges",
+  "column_break_aiet",
+  "method_of_packing",
+  "letter",
+  "adr",
+  "senders_instructions",
+  "tractor_license_plate",
+  "trailer_license_plate",
+  "carriage_charges",
+  "cash_on_delivery",
+  "importer_security_filling_section",
+  "manufacturer_supplier_address",
+  "seller_address",
+  "buyer_or_owner_name_and_address",
+  "ship_name_address",
+  "column_break_nwyh",
+  "importer_of_record_number",
+  "importer_of_record_name_and_address",
+  "hts_code",
+  "container_stuffing_location",
+  "consolidator_stuffername_and_address",
+  "declaration_tab",
+  "new_and_unused_declaration_section",
+  "contact",
+  "column_break_imxl",
+  "date_of_manufacture",
+  "packing_declaration_section",
+  "reference",
+  "column_break_auey",
+  "consignment",
+  "packing_list_section",
+  "exporter",
+  "column_break_ixoc",
+  "packing_information",
+  "phytosanitary_certificate_section",
+  "name_and_address_of_exporter",
+  "certificate_no",
+  "consignee_address",
+  "name_of_plants",
+  "chemical",
+  "column_break_wtnu",
+  "conveyance",
+  "declaraed_point_of_entry",
+  "commodity_codes",
+  "concentration",
+  "column_break_azlh",
+  "additional_declaration",
+  "import_permit_number",
+  "treatment",
+  "shipper_instruction_section",
+  "certifier",
+  "to",
+  "column_break_hxnm",
+  "blanket_period",
+  "hs_tariff_classification",
+  "column_break_xxji",
+  "from",
+  "section_break_hivg",
+  "producer",
+  "importer",
+  "column_break_lsfk",
+  "origin_criterion",
+  "certificate_number",
+  "column_break_jbas",
+  "consolidated_shipment_ref",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Freightify Shipment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "basic_tab",
+   "fieldtype": "Tab Break",
+   "label": "Basic"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "file_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "File No"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "post_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Post Date"
+  },
+  {
+   "fieldname": "forwarding_agent",
+   "fieldtype": "Link",
+   "label": "Forwarding Agent",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "op",
+   "fieldtype": "Link",
+   "label": "OP",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_jnhv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mbl_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": " MB/L No.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "oversea_agent",
+   "fieldtype": "Link",
+   "label": "Oversea Agent",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "co_loader",
+   "fieldtype": "Link",
+   "label": "Co loader",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "carrier_contract_no",
+   "fieldtype": "Data",
+   "label": "Carrier Contract No."
+  },
+  {
+   "fieldname": "column_break_qkfc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "office",
+   "fieldtype": "Link",
+   "label": "Office",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "carrier",
+   "fieldtype": "Link",
+   "label": "Carrier",
+   "options": "Carrier"
+  },
+  {
+   "fieldname": "agent_ref_no",
+   "fieldtype": "Data",
+   "label": "Agent Ref No."
+  },
+  {
+   "default": "0",
+   "fieldname": "direct_master",
+   "fieldtype": "Check",
+   "label": " Direct Master"
+  },
+  {
+   "fieldname": "column_break_som8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bl_type",
+   "fieldtype": "Select",
+   "label": "B/L Type",
+   "options": "Carrier Buyer Consol\nCo-Load\nConsol\nDirect\nDirect triangle\nForwarding\nNormal\nThird Party\nTriangle"
+  },
+  {
+   "fieldname": "bl_acct_carrier",
+   "fieldtype": "Link",
+   "label": "B/L Acct. Carrier",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "sub_bl_no",
+   "fieldtype": "Data",
+   "label": " Sub B/L No."
+  },
+  {
+   "depends_on": "eval:doc.direct_master==1",
+   "fieldname": "direct_master_section",
+   "fieldtype": "Section Break",
+   "label": "Direct Master"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "customer_ref_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Ref No"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "sales",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_38bd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "shipper",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Shipper",
+   "options": "Customer"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "bill_to",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Bill To",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_tq5b",
+   "fieldtype": "Column Break",
+   "options": "\n"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "consignee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Consignee",
+   "options": "Customer"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "sales_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Sales Type",
+   "options": "\nCO-LOAD\nFREE CARGO\nNOMI"
+  },
+  {
+   "fieldname": "column_break_y1qz",
+   "fieldtype": "Column Break",
+   "options": "\n"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "notify",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Notify",
+   "options": "Customer"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "GENERAL CARGO",
+   "fieldname": "cargo_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Cargo Type",
+   "options": "AUTOMOBILE (NON-HAZ)\nBATTERY\nGENERAL CARGO\nHAZARDOUS\nREFRIGERATOR\nSPECIAL"
+  },
+  {
+   "fieldname": "vessel_details_section",
+   "fieldtype": "Section Break",
+   "label": "Vessel Details"
+  },
+  {
+   "fieldname": "vessel",
+   "fieldtype": "Link",
+   "label": "Vessel",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "port_of_loading",
+   "fieldtype": "Link",
+   "label": "Port of Loading",
+   "options": "Port"
+  },
+  {
+   "fieldname": "place_of_delivery_del",
+   "fieldtype": "Link",
+   "label": "Place of Delivery (DEL)",
+   "options": "Port"
+  },
+  {
+   "fieldname": "column_break_rv4k",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "voyage",
+   "fieldtype": "Data",
+   "label": "Voyage"
+  },
+  {
+   "fieldname": "etd",
+   "fieldtype": "Date",
+   "label": "ETD"
+  },
+  {
+   "fieldname": "place_of_delivery_eta",
+   "fieldtype": "Date",
+   "label": "Place of Delivery ETA "
+  },
+  {
+   "fieldname": "atd",
+   "fieldtype": "Date",
+   "label": "ATD"
+  },
+  {
+   "fieldname": "column_break_sobg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cy_location",
+   "fieldtype": "Link",
+   "label": "CY Location ",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "port_of_discharge",
+   "fieldtype": "Link",
+   "label": "Port of Discharge",
+   "options": "Port"
+  },
+  {
+   "fieldname": "final_destination",
+   "fieldtype": "Link",
+   "label": "Final Destination ",
+   "options": "Port"
+  },
+  {
+   "fieldname": "ata",
+   "fieldtype": "Date",
+   "label": "ATA"
+  },
+  {
+   "fieldname": "freight_details_section",
+   "fieldtype": "Section Break",
+   "label": "Freight Details"
+  },
+  {
+   "fieldname": "freight",
+   "fieldtype": "Select",
+   "label": "Freight",
+   "options": "Collect\nPrepaid"
+  },
+  {
+   "fieldname": "obl_type",
+   "fieldtype": "Select",
+   "label": "OB/L Type",
+   "options": "Express Bill Of Lading\nOriginal Bill Of Lading\nSeaway Bill\nElectronic BL (EBL) & IBL"
+  },
+  {
+   "fieldname": "latest_gate_in",
+   "fieldtype": "Date",
+   "label": "Latest Gate In "
+  },
+  {
+   "fieldname": "column_break_uuun",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ship_mode",
+   "fieldtype": "Select",
+   "label": "Ship Mode",
+   "options": "FCL\nLCL\nFAK\nBULK"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "Today",
+   "fieldname": "obl_received",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "OB/L Received",
+   "read_only_depends_on": "eval:doc.edit_obl_received==0"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "edit_obl_received",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Edit OB/L Received"
+  },
+  {
+   "fieldname": "column_break_ewb5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "business_referred_by",
+   "fieldtype": "Link",
+   "label": "Business Referred By ",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "service_term",
+   "fieldtype": "Select",
+   "label": "Service Term",
+   "options": "BT\nCFS\nCY\nDOOR\nFI\nFO\nFOT\nTACKLE"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "Today",
+   "fieldname": "released_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Released Date ",
+   "read_only_depends_on": "eval:doc.edit_release_date==0"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "edit_release_date",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Edit Release Date"
+  },
+  {
+   "fieldname": "hbl_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "HB/L Information"
+  },
+  {
+   "fieldname": "hbl",
+   "fieldtype": "Table",
+   "label": "HB/L",
+   "options": "HBL Info"
+  },
+  {
+   "fieldname": "container_item_tab",
+   "fieldtype": "Tab Break",
+   "label": "Container & Item"
+  },
+  {
+   "fieldname": "container",
+   "fieldtype": "Table",
+   "label": "Container",
+   "options": "Freightify Container"
+  },
+  {
+   "fieldname": "section_break_d1iq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_2g0j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Freightify Shipment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "shipping_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Shipping Type",
+   "options": "\nOcean Import\nOcean Export",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_u0es",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Sales Order Item"
+  },
+  {
+   "fieldname": "section_break_n5jq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "schedules_and_rate_tab",
+   "fieldtype": "Tab Break",
+   "label": "Schedules and Rate"
+  },
+  {
+   "fieldname": "origin",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Origin",
+   "no_copy": 1,
+   "options": "Port",
+   "read_only": 1
+  },
+  {
+   "fieldname": "departure_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Departure Date",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5vya",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Destination",
+   "no_copy": 1,
+   "options": "Port",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.duration>0",
+   "fieldname": "duration",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Duration",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "schedule_rate_reference_section",
+   "fieldtype": "Section Break",
+   "label": "Schedule Rate Reference"
+  },
+  {
+   "fieldname": "reference_doctype",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Reference Doctype",
+   "no_copy": 1,
+   "options": "DocType",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Reference Name",
+   "no_copy": 1,
+   "options": "reference_doctype",
+   "read_only": 1
+  },
+  {
+   "fieldname": "schedule_rate_details_section",
+   "fieldtype": "Section Break",
+   "label": "Schedule Rate Details"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "schedule_and_rate",
+   "fieldtype": "Table",
+   "label": "Schedule and Rate",
+   "no_copy": 1,
+   "options": "Schedule and Rate Detail"
+  },
+  {
+   "fieldname": "column_break_zznb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "SHIPMENT-.YY.-"
+  },
+  {
+   "depends_on": "eval:doc.schedule_and_rate.length>0 && (doc.docstatus != 1 && doc.docstatus !=2)",
+   "fieldname": "get_item",
+   "fieldtype": "Button",
+   "label": "Get Item"
+  },
+  {
+   "depends_on": "eval:doc.schedule_and_rate.length>0 && doc.docstatus == 1",
+   "fieldname": "fetch_items",
+   "fieldtype": "Button",
+   "label": "Fetch Items"
+  },
+  {
+   "fieldname": "column_break_spt8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.container.length > 0",
+   "fieldname": "track",
+   "fieldtype": "Button",
+   "label": "Track"
+  },
+  {
+   "fieldname": "bill_of_exchange_tab",
+   "fieldtype": "Tab Break",
+   "label": "Bill of Exchange"
+  },
+  {
+   "fieldname": "amount_in_figures",
+   "fieldtype": "Small Text",
+   "label": "Amount in Figures"
+  },
+  {
+   "fieldname": "bl_date_if_applicable",
+   "fieldtype": "Date",
+   "label": "B/L Date (if applicable)"
+  },
+  {
+   "fieldname": "place_of_issue",
+   "fieldtype": "Data",
+   "label": "Place of Issue"
+  },
+  {
+   "fieldname": "date_of_issue",
+   "fieldtype": "Date",
+   "label": "Date of Issue"
+  },
+  {
+   "fieldname": "at",
+   "fieldtype": "Data",
+   "label": "AT"
+  },
+  {
+   "fieldname": "pay_to_the_order_of",
+   "fieldtype": "Data",
+   "label": "Pay to the order of"
+  },
+  {
+   "fieldname": "the_sum_of_amount_in_words",
+   "fieldtype": "Data",
+   "label": "The sum of (amount in words)"
+  },
+  {
+   "fieldname": "column_break_xjzt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "drawn_under",
+   "fieldtype": "Data",
+   "label": "Drawn Under"
+  },
+  {
+   "fieldname": "dated",
+   "fieldtype": "Date",
+   "label": "Dated"
+  },
+  {
+   "fieldname": "issued_by",
+   "fieldtype": "Data",
+   "label": "Issued by"
+  },
+  {
+   "fieldname": "drawee_sign",
+   "fieldtype": "Small Text",
+   "label": "Signed for and on behalf of Drawee"
+  },
+  {
+   "fieldname": "authorized_sign",
+   "fieldtype": "Data",
+   "label": "Name of authorized signatory"
+  },
+  {
+   "fieldname": "column_break_togs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "notify_party",
+   "fieldtype": "Data",
+   "label": "Notify Party (if not consignee)"
+  },
+  {
+   "fieldname": "additional_party",
+   "fieldtype": "Data",
+   "label": "Additional Notify Party"
+  },
+  {
+   "fieldname": "additional_info",
+   "fieldtype": "Data",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "orginal_bill_of_lading",
+   "fieldtype": "Data",
+   "label": "No. of original Bills of Lading"
+  },
+  {
+   "fieldname": "incoterms",
+   "fieldtype": "Data",
+   "label": "Incoterms"
+  },
+  {
+   "fieldname": "payable_at",
+   "fieldtype": "Data",
+   "label": "Payable AT"
+  },
+  {
+   "fieldname": "shipped_date",
+   "fieldtype": "Data",
+   "label": "Shipped on Board Date"
+  },
+  {
+   "fieldname": "forwarding_instructions_section",
+   "fieldtype": "Section Break",
+   "label": "Forwarding Instructions"
+  },
+  {
+   "fieldname": "buyer_ref",
+   "fieldtype": "Data",
+   "label": "Buyer reference"
+  },
+  {
+   "fieldname": "declared_value",
+   "fieldtype": "Data",
+   "label": "Declared Value"
+  },
+  {
+   "fieldname": "special_instructions",
+   "fieldtype": "Small Text",
+   "label": "Special Instructions"
+  },
+  {
+   "fieldname": "export_declaration_number",
+   "fieldtype": "Data",
+   "label": "Export Declaration Number"
+  },
+  {
+   "fieldname": "column_break_ufmt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "buyer_consignee",
+   "fieldtype": "Small Text",
+   "label": "Buyer (if not consignee)"
+  },
+  {
+   "fieldname": "letter_credit_no",
+   "fieldtype": "Data",
+   "label": "Letter Credit No"
+  },
+  {
+   "fieldname": "column_break_dunj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "origin_service_mode",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Origin Service Mode",
+   "options": "\nCY\nSD\nCY/SD",
+   "read_only": 1
+  },
+  {
+   "fieldname": "destination_service_mode",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Destination Service Mode",
+   "options": "\nCY\nSD\nCY/SD",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cmr_consignment_note_section",
+   "fieldtype": "Section Break",
+   "label": "CMR Consignment Note"
+  },
+  {
+   "fieldname": "sender",
+   "fieldtype": "Link",
+   "label": "Sender",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "place_of_delivery_goods",
+   "fieldtype": "Link",
+   "label": "Place of Delivery Goods",
+   "options": "Port"
+  },
+  {
+   "fieldname": "successive_carrier",
+   "fieldtype": "Link",
+   "label": "Successive Carrier",
+   "options": "Carrier"
+  },
+  {
+   "fieldname": "taking_goods",
+   "fieldtype": "Date",
+   "label": "Place and date of taking over the goods"
+  },
+  {
+   "fieldname": "carriers_reservation_and_observations",
+   "fieldtype": "Small Text",
+   "label": "Carrier's Reservation and Observations"
+  },
+  {
+   "fieldname": "annexed_documents",
+   "fieldtype": "Small Text",
+   "label": "Annexed Documents"
+  },
+  {
+   "fieldname": "column_break_cbgj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "method_of_packing",
+   "fieldtype": "Small Text",
+   "label": "Method of Packing"
+  },
+  {
+   "fieldname": "statistical_number",
+   "fieldtype": "Data",
+   "label": "Statistical Number"
+  },
+  {
+   "fieldname": "column_break_aiet",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "volume",
+   "fieldtype": "Data",
+   "label": "Volume"
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Data",
+   "label": "Class"
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Data",
+   "label": "Number"
+  },
+  {
+   "fieldname": "letter",
+   "fieldtype": "Data",
+   "label": "Letter"
+  },
+  {
+   "fieldname": "adr",
+   "fieldtype": "Data",
+   "label": "ADR"
+  },
+  {
+   "fieldname": "senders_instructions",
+   "fieldtype": "Small Text",
+   "label": "Sender's Instructions"
+  },
+  {
+   "fieldname": "special_aruguments",
+   "fieldtype": "Small Text",
+   "label": "Special Aruguments"
+  },
+  {
+   "fieldname": "paid_by",
+   "fieldtype": "Data",
+   "label": "To be paid by"
+  },
+  {
+   "fieldname": "established",
+   "fieldtype": "Data",
+   "label": "Established In/On"
+  },
+  {
+   "fieldname": "tractor_license_plate",
+   "fieldtype": "Data",
+   "label": "Tractor License Plate"
+  },
+  {
+   "fieldname": "trailer_license_plate",
+   "fieldtype": "Data",
+   "label": "Trailer License Plate"
+  },
+  {
+   "fieldname": "carriage_charges",
+   "fieldtype": "Data",
+   "label": "Carriage Charges"
+  },
+  {
+   "fieldname": "reductions",
+   "fieldtype": "Data",
+   "label": "Reductions"
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Data",
+   "label": "Balance"
+  },
+  {
+   "fieldname": "supplement_charges",
+   "fieldtype": "Data",
+   "label": "Supplement Charges"
+  },
+  {
+   "fieldname": "cash_on_delivery",
+   "fieldtype": "Data",
+   "label": "Cash on Delivery"
+  },
+  {
+   "fieldname": "importer_security_filling_section",
+   "fieldtype": "Section Break",
+   "label": "Importer Security Filling"
+  },
+  {
+   "fieldname": "manufacturer_supplier_address",
+   "fieldtype": "Small Text",
+   "label": "Manufacturer or Supplier Name and Address"
+  },
+  {
+   "fieldname": "seller_address",
+   "fieldtype": "Link",
+   "label": "Seller or Owner Name and Address",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "ship_name_address",
+   "fieldtype": "Link",
+   "label": "Ship To Name and Address",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "importer_of_record_number",
+   "fieldtype": "Data",
+   "label": "Importer of Record Number"
+  },
+  {
+   "fieldname": "importer_of_record_name_and_address",
+   "fieldtype": "Data",
+   "label": "Importer of Record Name and Address"
+  },
+  {
+   "fieldname": "hts_code",
+   "fieldtype": "Data",
+   "label": "HTS Code"
+  },
+  {
+   "fieldname": "container_stuffing_location",
+   "fieldtype": "Data",
+   "label": "Container Stuffing Location"
+  },
+  {
+   "fieldname": "consolidator_stuffername_and_address",
+   "fieldtype": "Data",
+   "label": "Consolidator (Stuffer)Name and Address"
+  },
+  {
+   "fieldname": "buyer_or_owner_name_and_address",
+   "fieldtype": "Link",
+   "label": "Buyer or Owner Name and Address",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_nwyh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "declaration_tab",
+   "fieldtype": "Tab Break",
+   "label": "Declaration"
+  },
+  {
+   "fieldname": "new_and_unused_declaration_section",
+   "fieldtype": "Section Break",
+   "label": "New and Unused Declaration"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "column_break_imxl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_manufacture",
+   "fieldtype": "Date",
+   "label": "Date of Manufacture"
+  },
+  {
+   "fieldname": "packing_declaration_section",
+   "fieldtype": "Section Break",
+   "label": "Packing Declaration"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "column_break_auey",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "consignment",
+   "fieldtype": "Data",
+   "label": "Consignment Identifier or Numerical Link"
+  },
+  {
+   "fieldname": "packing_list_section",
+   "fieldtype": "Section Break",
+   "label": "Packing List"
+  },
+  {
+   "fieldname": "exporter",
+   "fieldtype": "Link",
+   "label": "Exporter",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_ixoc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "packing_information",
+   "fieldtype": "Small Text",
+   "label": "Packing Information"
+  },
+  {
+   "fieldname": "phytosanitary_certificate_section",
+   "fieldtype": "Section Break",
+   "label": "Phytosanitary Certificate"
+  },
+  {
+   "fieldname": "name_and_address_of_exporter",
+   "fieldtype": "Link",
+   "label": "Name and Address of Exporter",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "certificate_no",
+   "fieldtype": "Data",
+   "label": "Certificate No"
+  },
+  {
+   "fieldname": "consignee_address",
+   "fieldtype": "Link",
+   "label": "Declared Name and Address of Consignee",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_wtnu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "conveyance",
+   "fieldtype": "Small Text",
+   "label": "Declared Means of Conveyance"
+  },
+  {
+   "fieldname": "declaraed_point_of_entry",
+   "fieldtype": "Data",
+   "label": "Declaraed Point of Entry"
+  },
+  {
+   "fieldname": "column_break_azlh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "additional_declaration",
+   "fieldtype": "Small Text",
+   "label": "Additional Declaration"
+  },
+  {
+   "fieldname": "import_permit_number",
+   "fieldtype": "Data",
+   "label": "Import Permit Number"
+  },
+  {
+   "fieldname": "name_of_plants",
+   "fieldtype": "Data",
+   "label": "Botanical name of Plants"
+  },
+  {
+   "fieldname": "chemical",
+   "fieldtype": "Data",
+   "label": "Chemical"
+  },
+  {
+   "fieldname": "commodity_codes",
+   "fieldtype": "Data",
+   "label": "Commodity Codes"
+  },
+  {
+   "fieldname": "concentration",
+   "fieldtype": "Data",
+   "label": "Concentration"
+  },
+  {
+   "fieldname": "treatment",
+   "fieldtype": "Data",
+   "label": "Treatment"
+  },
+  {
+   "fieldname": "shipper_instruction_section",
+   "fieldtype": "Section Break",
+   "label": "Shipper Instruction"
+  },
+  {
+   "fieldname": "certifier",
+   "fieldtype": "Small Text",
+   "label": "Certifier"
+  },
+  {
+   "fieldname": "column_break_hxnm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "blanket_period",
+   "fieldtype": "Small Text",
+   "label": "Blanket Period (If Applicable)"
+  },
+  {
+   "fieldname": "column_break_xxji",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Small Text",
+   "label": "From"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Small Text",
+   "label": "To"
+  },
+  {
+   "fieldname": "hs_tariff_classification",
+   "fieldtype": "Small Text",
+   "label": "HS Tariff Classification"
+  },
+  {
+   "fieldname": "section_break_hivg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "producer",
+   "fieldtype": "Link",
+   "label": "Producer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "importer",
+   "fieldtype": "Link",
+   "label": "Importer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "origin_criterion",
+   "fieldtype": "Data",
+   "label": "Origin Criterion"
+  },
+  {
+   "fieldname": "certificate_number",
+   "fieldtype": "Data",
+   "label": "Certificate Number"
+  },
+  {
+   "fieldname": "column_break_lsfk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jbas",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "consolidated_shipment_ref",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Consolidated Shipment Ref",
+   "options": "Consolidated Shipment",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Shipment Rate",
+   "link_fieldname": "reference_name"
+  }
+ ],
+ "modified": "2024-12-23 13:33:41.655762",
+ "modified_by": "Administrator",
+ "module": "Freightify",
+ "name": "Freightify Shipment",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

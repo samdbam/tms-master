@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:port_code",
+ "creation": "2024-10-19 15:10:19.335685",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "port_code",
+  "port_name",
+  "city_name",
+  "type",
+  "location",
+  "country_name",
+  "country_code",
+  "region_name",
+  "region_code",
+  "latitude",
+  "longitude"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "port_code",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Port Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "port_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Port Name"
+  },
+  {
+   "fieldname": "city_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "City Name"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location"
+  },
+  {
+   "fieldname": "country_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Country Name"
+  },
+  {
+   "fieldname": "country_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Country Code"
+  },
+  {
+   "fieldname": "region_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Region Name"
+  },
+  {
+   "fieldname": "region_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Region Code"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Longitude"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-02 17:40:16.428551",
+ "modified_by": "Administrator",
+ "module": "Freightify",
+ "name": "Port",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "port_code,port_name",
+ "show_preview_popup": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "port_name",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

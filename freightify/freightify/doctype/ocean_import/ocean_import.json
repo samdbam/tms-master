@@ -1,0 +1,519 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:OI-{YY}{MM}{####}",
+ "creation": "2024-10-29 17:47:02.400896",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "amended_from",
+  "basic_tab",
+  "file_no",
+  "post_date",
+  "forwarding_agent",
+  "op",
+  "column_break_jnhv",
+  "mbl_no",
+  "oversea_agent",
+  "co_loader",
+  "carrier_contract_no",
+  "column_break_qkfc",
+  "office",
+  "carrier",
+  "agent_ref_no",
+  "direct_master",
+  "column_break_som8",
+  "bl_type",
+  "bl_acct_carrier",
+  "sub_bl_no",
+  "direct_master_section",
+  "customer_ref_no",
+  "customer",
+  "sales",
+  "column_break_38bd",
+  "shipper",
+  "bill_to",
+  "column_break_tq5b",
+  "consignee",
+  "sales_type",
+  "column_break_y1qz",
+  "notify",
+  "cargo_type",
+  "vessel_details_section",
+  "vessel",
+  "port_of_loading",
+  "place_of_delivery_del",
+  "column_break_rv4k",
+  "voyage",
+  "etd",
+  "place_of_delivery_eta",
+  "atd",
+  "column_break_sobg",
+  "cy_location",
+  "port_of_discharge",
+  "final_destination",
+  "ata",
+  "freight_details_section",
+  "freight",
+  "obl_type",
+  "latest_gate_in",
+  "column_break_uuun",
+  "ship_mode",
+  "obl_received",
+  "edit_obl_received",
+  "column_break_ewb5",
+  "business_referred_by",
+  "service_term",
+  "released_date",
+  "edit_release_date",
+  "hbl_information_tab",
+  "hbl",
+  "search_rates",
+  "rate_details",
+  "container_item_tab",
+  "container",
+  "section_break_d1iq",
+  "remarks",
+  "column_break_2g0j",
+  "description",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Ocean Import",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "basic_tab",
+   "fieldtype": "Tab Break",
+   "label": "Basic"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "file_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "File No"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "post_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Post Date"
+  },
+  {
+   "fieldname": "forwarding_agent",
+   "fieldtype": "Data",
+   "label": "Forwarding Agent"
+  },
+  {
+   "fieldname": "op",
+   "fieldtype": "Data",
+   "label": "OP"
+  },
+  {
+   "fieldname": "column_break_jnhv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mbl_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": " MB/L No.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "oversea_agent",
+   "fieldtype": "Data",
+   "label": "Oversea Agent"
+  },
+  {
+   "fieldname": "co_loader",
+   "fieldtype": "Data",
+   "label": "Co loader"
+  },
+  {
+   "fieldname": "carrier_contract_no",
+   "fieldtype": "Data",
+   "label": "Carrier Contract No."
+  },
+  {
+   "fieldname": "column_break_qkfc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "office",
+   "fieldtype": "Data",
+   "label": "Office"
+  },
+  {
+   "fieldname": "carrier",
+   "fieldtype": "Data",
+   "label": "Carrier"
+  },
+  {
+   "fieldname": "agent_ref_no",
+   "fieldtype": "Data",
+   "label": "Agent Ref No."
+  },
+  {
+   "default": "0",
+   "fieldname": "direct_master",
+   "fieldtype": "Check",
+   "label": " Direct Master"
+  },
+  {
+   "fieldname": "column_break_som8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bl_type",
+   "fieldtype": "Select",
+   "label": "B/L Type",
+   "options": "Carrier Buyer Consol\nCo-Load\nConsol\nDirect\nDirect triangle\nForwarding\nNormal\nThird Party\nTriangle"
+  },
+  {
+   "fieldname": "bl_acct_carrier",
+   "fieldtype": "Data",
+   "label": "B/L Acct. Carrier"
+  },
+  {
+   "fieldname": "sub_bl_no",
+   "fieldtype": "Data",
+   "label": " Sub B/L No."
+  },
+  {
+   "depends_on": "eval:doc.direct_master==1",
+   "fieldname": "direct_master_section",
+   "fieldtype": "Section Break",
+   "label": "Direct Master"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "customer_ref_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Ref No"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "sales",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sales"
+  },
+  {
+   "fieldname": "column_break_38bd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "shipper",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shipper"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "bill_to",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bill To"
+  },
+  {
+   "fieldname": "column_break_tq5b",
+   "fieldtype": "Column Break",
+   "options": "\n"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "consignee",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Consignee"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "sales_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Sales Type",
+   "options": "\nCO-LOAD\nFREE CARGO\nNOMI"
+  },
+  {
+   "fieldname": "column_break_y1qz",
+   "fieldtype": "Column Break",
+   "options": "\n"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "notify",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Notify"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "GENERAL CARGO",
+   "fieldname": "cargo_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Cargo Type",
+   "options": "AUTOMOBILE (NON-HAZ)\nBATTERY\nGENERAL CARGO\nHAZARDOUS\nREFRIGERATOR\nSPECIAL"
+  },
+  {
+   "fieldname": "vessel_details_section",
+   "fieldtype": "Section Break",
+   "label": "Vessel Details"
+  },
+  {
+   "fieldname": "vessel",
+   "fieldtype": "Data",
+   "label": "Vessel"
+  },
+  {
+   "fieldname": "port_of_loading",
+   "fieldtype": "Data",
+   "label": "Port of Loading"
+  },
+  {
+   "fieldname": "place_of_delivery_del",
+   "fieldtype": "Data",
+   "label": "Place of Delivery (DEL)"
+  },
+  {
+   "fieldname": "column_break_rv4k",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "voyage",
+   "fieldtype": "Data",
+   "label": "Voyage"
+  },
+  {
+   "fieldname": "etd",
+   "fieldtype": "Date",
+   "label": "ETD"
+  },
+  {
+   "fieldname": "place_of_delivery_eta",
+   "fieldtype": "Date",
+   "label": "Place of Delivery ETA "
+  },
+  {
+   "fieldname": "atd",
+   "fieldtype": "Date",
+   "label": "ATD"
+  },
+  {
+   "fieldname": "column_break_sobg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cy_location",
+   "fieldtype": "Data",
+   "label": "CY Location "
+  },
+  {
+   "fieldname": "port_of_discharge",
+   "fieldtype": "Data",
+   "label": "Port of Discharge"
+  },
+  {
+   "fieldname": "final_destination",
+   "fieldtype": "Data",
+   "label": "Final Destination "
+  },
+  {
+   "fieldname": "ata",
+   "fieldtype": "Date",
+   "label": "ATA"
+  },
+  {
+   "fieldname": "freight_details_section",
+   "fieldtype": "Section Break",
+   "label": "Freight Details"
+  },
+  {
+   "fieldname": "freight",
+   "fieldtype": "Select",
+   "label": "Freight",
+   "options": "Collect\nPrepaid"
+  },
+  {
+   "fieldname": "obl_type",
+   "fieldtype": "Select",
+   "label": "OB/L Type",
+   "options": "Express Bill Of Lading\nOriginal Bill Of Lading\nSeaway Bill\nElectronic BL (EBL) & IBL"
+  },
+  {
+   "fieldname": "latest_gate_in",
+   "fieldtype": "Date",
+   "label": "Latest Gate In "
+  },
+  {
+   "fieldname": "column_break_uuun",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ship_mode",
+   "fieldtype": "Select",
+   "label": "Ship Mode",
+   "options": "FCL\nLCL\nFAK\nBULK"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "Today",
+   "fieldname": "obl_received",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "OB/L Received",
+   "read_only_depends_on": "eval:doc.edit_obl_received==0"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "edit_obl_received",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Edit OB/L Received"
+  },
+  {
+   "fieldname": "column_break_ewb5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "business_referred_by",
+   "fieldtype": "Data",
+   "label": "Business Referred By "
+  },
+  {
+   "fieldname": "service_term",
+   "fieldtype": "Select",
+   "label": "Service Term",
+   "options": "BT\nCFS\nCY\nDOOR\nFI\nFO\nFOT\nTACKLE"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "Today",
+   "fieldname": "released_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Released Date ",
+   "read_only_depends_on": "eval:doc.edit_release_date==0"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "edit_release_date",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Edit Release Date"
+  },
+  {
+   "fieldname": "hbl_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "HB/L Information"
+  },
+  {
+   "fieldname": "hbl",
+   "fieldtype": "Table",
+   "label": "HB/L",
+   "options": "HBL Info"
+  },
+  {
+   "fieldname": "search_rates",
+   "fieldtype": "Button",
+   "label": "Search Rates"
+  },
+  {
+   "fieldname": "rate_details",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Rate Details"
+  },
+  {
+   "fieldname": "container_item_tab",
+   "fieldtype": "Tab Break",
+   "label": "Container & Item"
+  },
+  {
+   "fieldname": "container",
+   "fieldtype": "Table",
+   "label": "Container",
+   "options": "Ocean Container"
+  },
+  {
+   "fieldname": "section_break_d1iq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_2g0j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Ocean Import",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-10-29 17:47:02.400896",
+ "modified_by": "Administrator",
+ "module": "Freightify",
+ "name": "Ocean Import",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

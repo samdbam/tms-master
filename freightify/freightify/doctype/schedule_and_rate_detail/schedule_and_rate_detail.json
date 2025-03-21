@@ -1,0 +1,246 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-24 11:03:18.784345",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "basics_section",
+  "is_selected",
+  "port_of_origin",
+  "port_of_destination",
+  "carrier_name",
+  "carrier_code",
+  "transit_time",
+  "service_type",
+  "rate_id",
+  "sailing_date",
+  "buy_rate",
+  "sell_rate",
+  "column_break_imfa",
+  "effective_from",
+  "effective_to",
+  "incoterm",
+  "cargo_type",
+  "commodity",
+  "schedules_section",
+  "schedule_json",
+  "schedule",
+  "schedule_html",
+  "charges_section",
+  "charges_json",
+  "charge",
+  "charge_html",
+  "remarks_and_inclusions_section",
+  "remarks",
+  "inclusions",
+  "t_c_section",
+  "terms_and_conditions"
+ ],
+ "fields": [
+  {
+   "fieldname": "basics_section",
+   "fieldtype": "Section Break",
+   "label": "Basics"
+  },
+  {
+   "fieldname": "port_of_origin",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Port of Origin",
+   "options": "Port"
+  },
+  {
+   "fieldname": "port_of_destination",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Port of Destination",
+   "options": "Port"
+  },
+  {
+   "fieldname": "carrier_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Carrier Name"
+  },
+  {
+   "fieldname": "carrier_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Carrier Code"
+  },
+  {
+   "description": "(In Days)",
+   "fieldname": "transit_time",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Transit Time"
+  },
+  {
+   "fieldname": "service_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Service Type"
+  },
+  {
+   "fieldname": "rate_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rate ID"
+  },
+  {
+   "fieldname": "sailing_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Sailing Date"
+  },
+  {
+   "fieldname": "column_break_imfa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "effective_from",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Effective From"
+  },
+  {
+   "fieldname": "effective_to",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Effective To"
+  },
+  {
+   "fieldname": "incoterm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Incoterm"
+  },
+  {
+   "fieldname": "cargo_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cargo Type"
+  },
+  {
+   "fieldname": "commodity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Commodity"
+  },
+  {
+   "bold": 1,
+   "fieldname": "schedules_section",
+   "fieldtype": "Section Break",
+   "label": "Schedules"
+  },
+  {
+   "fieldname": "schedule_json",
+   "fieldtype": "JSON",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Schedule JSON",
+   "read_only": 1
+  },
+  {
+   "fieldname": "schedule",
+   "fieldtype": "Long Text",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Schedule",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "charges_section",
+   "fieldtype": "Section Break",
+   "label": "Charges"
+  },
+  {
+   "fieldname": "charges_json",
+   "fieldtype": "JSON",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Charges JSON",
+   "read_only": 1
+  },
+  {
+   "fieldname": "charge",
+   "fieldtype": "Long Text",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Charge",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks_and_inclusions_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks and Inclusions"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "inclusions",
+   "fieldtype": "Small Text",
+   "label": "Inclusions"
+  },
+  {
+   "fieldname": "t_c_section",
+   "fieldtype": "Section Break",
+   "label": "T&C"
+  },
+  {
+   "fieldname": "buy_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Buy Rate",
+   "precision": "2"
+  },
+  {
+   "fieldname": "sell_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Sell Rate",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_selected",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Selected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "terms_and_conditions",
+   "fieldtype": "Small Text",
+   "label": "Terms and Conditions"
+  },
+  {
+   "fieldname": "schedule_html",
+   "fieldtype": "HTML",
+   "label": "Schedule HTML"
+  },
+  {
+   "fieldname": "charge_html",
+   "fieldtype": "HTML",
+   "label": "Charge HTML"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-12 11:42:40.609343",
+ "modified_by": "Administrator",
+ "module": "Freightify",
+ "name": "Schedule and Rate Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

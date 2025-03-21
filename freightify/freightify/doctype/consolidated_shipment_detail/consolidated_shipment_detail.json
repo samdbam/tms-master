@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-17 16:09:33.341657",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "shipment_id",
+  "consignee",
+  "consignor",
+  "origin",
+  "destination",
+  "house_bill",
+  "packs",
+  "type",
+  "inners",
+  "inners_type",
+  "weight",
+  "unit_weight",
+  "volume",
+  "volume_unit",
+  "inspection",
+  "etd",
+  "eta"
+ ],
+ "fields": [
+  {
+   "fieldname": "shipment_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Shipment ID",
+   "options": "Freightify Shipment",
+   "read_only": 1
+  },
+  {
+   "fieldname": "consignee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Consignee",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "consignor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Consignor",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "origin",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Origin",
+   "options": "Port"
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Destination",
+   "options": "Port"
+  },
+  {
+   "fieldname": "house_bill",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "House Bill"
+  },
+  {
+   "fieldname": "packs",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Packs",
+   "precision": "2"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "UOM",
+   "precision": "2"
+  },
+  {
+   "fieldname": "inners",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Inners"
+  },
+  {
+   "fieldname": "inners_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Inners Type",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight"
+  },
+  {
+   "fieldname": "unit_weight",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Unit Weight",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "volume",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Volume"
+  },
+  {
+   "fieldname": "volume_unit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Volume Unit",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "inspection",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Inspection"
+  },
+  {
+   "fieldname": "etd",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "ETD"
+  },
+  {
+   "fieldname": "eta",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "ETA"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-12-21 10:58:54.088295",
+ "modified_by": "Administrator",
+ "module": "Freightify",
+ "name": "Consolidated Shipment Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

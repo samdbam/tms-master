@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:code",
+ "creation": "2024-10-04 16:29:20.997614",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "code",
+  "ams_type_code",
+  "teu",
+  "tariff_code",
+  "freight_charges",
+  "column_break_nejh",
+  "description",
+  "type",
+  "active"
+ ],
+ "fields": [
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "ams_type_code",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "AMS Type Code",
+   "options": "\n20 GP\n40 GP\n45 GP\n20 HQ\n40 HQ\n45 HQ\n53 HQ (9400)\n53 HQ (9500)\n20 SPECIAL EQUIP\n40 SPECIAL EQUIP"
+  },
+  {
+   "fieldname": "teu",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "TEU"
+  },
+  {
+   "fieldname": "column_break_nejh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type",
+   "options": "\n20'\n40'\n45'\nHC\nRF\nSOC"
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Active"
+  },
+  {
+   "fieldname": "tariff_code",
+   "fieldtype": "Data",
+   "label": "Tariff Code"
+  },
+  {
+   "fieldname": "freight_charges",
+   "fieldtype": "Float",
+   "label": "Freight Charges"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-12 17:56:04.330079",
+ "modified_by": "Administrator",
+ "module": "Freightify",
+ "name": "Container",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

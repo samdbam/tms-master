@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-19 15:58:58.197248",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "departure_details_section",
+  "departure_date",
+  "from_location",
+  "vgm_cutoff",
+  "port_cutoff",
+  "service",
+  "vessel",
+  "voyage_ref",
+  "arrival_details_section",
+  "arrival_date",
+  "to_location"
+ ],
+ "fields": [
+  {
+   "fieldname": "departure_details_section",
+   "fieldtype": "Section Break",
+   "label": "Departure Details"
+  },
+  {
+   "fieldname": "departure_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Departure Date"
+  },
+  {
+   "fieldname": "from_location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "From Location"
+  },
+  {
+   "fieldname": "vgm_cutoff",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "VGM Cutoff"
+  },
+  {
+   "fieldname": "port_cutoff",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Port Cutoff"
+  },
+  {
+   "fieldname": "service",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Service"
+  },
+  {
+   "fieldname": "vessel",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Vessel"
+  },
+  {
+   "fieldname": "voyage_ref",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Voyage Ref"
+  },
+  {
+   "fieldname": "arrival_details_section",
+   "fieldtype": "Section Break",
+   "label": "Arrival Details"
+  },
+  {
+   "fieldname": "arrival_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Arrival Date"
+  },
+  {
+   "fieldname": "to_location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "To Location"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-19 16:03:08.287183",
+ "modified_by": "Administrator",
+ "module": "Freightify",
+ "name": "Schedule Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

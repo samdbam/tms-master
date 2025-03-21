@@ -1,0 +1,218 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-29 17:46:55.456814",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "container_no",
+  "tp_sz",
+  "seal_no",
+  "lfd",
+  "fdd",
+  "section_break_ujig",
+  "seal_no2",
+  "pick_up_no",
+  "cprs_no",
+  "cnru_no",
+  "it_no",
+  "carrier_release",
+  "unload_from_vessel",
+  "gate_in",
+  "rail_start",
+  "place_of_delivery_eta",
+  "available_for_pickup",
+  "complete",
+  "appt",
+  "pick_up",
+  "gate_out",
+  "column_break_ulai",
+  "yard_location",
+  "dg",
+  "storage_start_date",
+  "storage_end_date",
+  "remarks",
+  "internal_remarks",
+  "fdest_eta",
+  "eta_door",
+  "ata_door",
+  "empty_return"
+ ],
+ "fields": [
+  {
+   "fieldname": "container_no",
+   "fieldtype": "Data",
+   "label": "Container No"
+  },
+  {
+   "fieldname": "tp_sz",
+   "fieldtype": "Data",
+   "label": "TP SZ"
+  },
+  {
+   "fieldname": "seal_no",
+   "fieldtype": "Data",
+   "label": "Seal No."
+  },
+  {
+   "fieldname": "lfd",
+   "fieldtype": "Date",
+   "label": "LFD"
+  },
+  {
+   "fieldname": "fdd",
+   "fieldtype": "Date",
+   "label": "FDD"
+  },
+  {
+   "fieldname": "section_break_ujig",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "seal_no2",
+   "fieldtype": "Data",
+   "label": "Seal No2"
+  },
+  {
+   "fieldname": "pick_up_no",
+   "fieldtype": "Data",
+   "label": "Pick Up No"
+  },
+  {
+   "fieldname": "cprs_no",
+   "fieldtype": "Data",
+   "label": "CPRS No"
+  },
+  {
+   "fieldname": "cnru_no",
+   "fieldtype": "Data",
+   "label": "CNRU No"
+  },
+  {
+   "fieldname": "it_no",
+   "fieldtype": "Data",
+   "label": "IT No"
+  },
+  {
+   "default": "0",
+   "fieldname": "carrier_release",
+   "fieldtype": "Check",
+   "label": "Carrier release"
+  },
+  {
+   "fieldname": "unload_from_vessel",
+   "fieldtype": "Date",
+   "label": "Unload from Vessel"
+  },
+  {
+   "fieldname": "gate_in",
+   "fieldtype": "Date",
+   "label": "Gate In"
+  },
+  {
+   "fieldname": "rail_start",
+   "fieldtype": "Date",
+   "label": "Rail Start"
+  },
+  {
+   "fieldname": "place_of_delivery_eta",
+   "fieldtype": "Date",
+   "label": "Place of Delivery ETA"
+  },
+  {
+   "default": "0",
+   "fieldname": "available_for_pickup",
+   "fieldtype": "Check",
+   "label": "Available for Pickup"
+  },
+  {
+   "default": "0",
+   "fieldname": "complete",
+   "fieldtype": "Check",
+   "label": "Complete"
+  },
+  {
+   "fieldname": "appt",
+   "fieldtype": "Date",
+   "label": "Appt"
+  },
+  {
+   "fieldname": "pick_up",
+   "fieldtype": "Date",
+   "label": "Pick Up"
+  },
+  {
+   "fieldname": "gate_out",
+   "fieldtype": "Date",
+   "label": "Gate Out"
+  },
+  {
+   "fieldname": "column_break_ulai",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "yard_location",
+   "fieldtype": "Data",
+   "label": "Yard Location"
+  },
+  {
+   "fieldname": "dg",
+   "fieldtype": "Select",
+   "label": "D.G",
+   "options": "No\nYes"
+  },
+  {
+   "fieldname": "storage_start_date",
+   "fieldtype": "Date",
+   "label": "Storage Start Date"
+  },
+  {
+   "fieldname": "storage_end_date",
+   "fieldtype": "Date",
+   "label": "Storage End Date"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "internal_remarks",
+   "fieldtype": "Small Text",
+   "label": "Internal Remarks "
+  },
+  {
+   "fieldname": "fdest_eta",
+   "fieldtype": "Date",
+   "label": "F.Dest ETA"
+  },
+  {
+   "fieldname": "eta_door",
+   "fieldtype": "Date",
+   "label": "ETA Door"
+  },
+  {
+   "fieldname": "ata_door",
+   "fieldtype": "Date",
+   "label": "ATA Door"
+  },
+  {
+   "fieldname": "empty_return",
+   "fieldtype": "Date",
+   "label": "Empty Return"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-29 17:46:55.456814",
+ "modified_by": "Administrator",
+ "module": "Freightify",
+ "name": "Ocean Import ChildTable",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

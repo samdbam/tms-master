@@ -1,0 +1,417 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-10-25 11:24:00.692155",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "schedule_tab",
+  "shipping_type",
+  "mode",
+  "column_break_u5xh",
+  "company",
+  "section_break_xdrt",
+  "origin_type",
+  "origin",
+  "departure_date",
+  "origin_service_mode",
+  "column_break_hloi",
+  "destination_type",
+  "destination",
+  "duration",
+  "destination_service_mode",
+  "container_details_section",
+  "container_qty",
+  "weight",
+  "volume",
+  "has_dimensions",
+  "dimensions",
+  "column_break_qwzp",
+  "container_type",
+  "weight_unit",
+  "volume_unit",
+  "containers",
+  "section_break_eqny",
+  "column_break_71fh",
+  "get_rates",
+  "schedules_and_rates_details_section",
+  "rate",
+  "is_selected",
+  "get_item",
+  "section_break_gwvk",
+  "items",
+  "reference_tab",
+  "reference_doctype",
+  "reference_name",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "schedule_tab",
+   "fieldtype": "Tab Break",
+   "label": "Schedule"
+  },
+  {
+   "default": "Ocean Import",
+   "fieldname": "shipping_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Shipping Type",
+   "options": "\nOcean Import\nOcean Export",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_xdrt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "origin",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Origin",
+   "options": "Port",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "departure_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Departure Date"
+  },
+  {
+   "fieldname": "column_break_hloi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Destination",
+   "options": "Port",
+   "reqd": 1
+  },
+  {
+   "default": "4",
+   "fieldname": "duration",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Duration"
+  },
+  {
+   "fieldname": "reference_tab",
+   "fieldtype": "Tab Break",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "reference_doctype",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Reference Doctype",
+   "options": "DocType",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Reference Name",
+   "options": "reference_doctype",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Shipment Rate",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Shipment Rate",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "depends_on": "eval:doc.origin && doc.departure_date && doc.destination &&  doc.mode && doc.origin_type && doc.destination_type && doc.docstatus==0",
+   "fieldname": "get_rates",
+   "fieldtype": "Button",
+   "label": "Get Rates"
+  },
+  {
+   "fieldname": "schedules_and_rates_details_section",
+   "fieldtype": "Section Break",
+   "label": "Schedules and Rates Details"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Table",
+   "label": "Rate",
+   "options": "Schedule and Rate Detail",
+   "read_only_depends_on": "eval:doc.is_selected ==1 && doc.items.length >0"
+  },
+  {
+   "default": "FCL",
+   "fieldname": "mode",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Mode",
+   "options": "\nLCL\nFCL\nAIR",
+   "reqd": 1
+  },
+  {
+   "default": "PORT",
+   "fieldname": "origin_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Origin Type",
+   "options": "\nPORT\nDOOR",
+   "reqd": 1
+  },
+  {
+   "default": "PORT",
+   "fieldname": "destination_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Destination Type",
+   "options": "\nPORT\nDOOR",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_u5xh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.mode == \"FCL\"",
+   "description": "Eg :1X20GPX25000XKG",
+   "fieldname": "containers",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Containers"
+  },
+  {
+   "depends_on": "eval:doc.mode != \"AIR\"",
+   "fieldname": "container_details_section",
+   "fieldtype": "Section Break",
+   "label": "Container Details"
+  },
+  {
+   "default": "1",
+   "depends_on": "eval:doc.mode == \"FCL\"",
+   "fieldname": "container_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Container Qty",
+   "mandatory_depends_on": "eval:doc.mode == \"FCL\""
+  },
+  {
+   "default": "18000",
+   "depends_on": "eval:doc.mode != \"AIR\" && doc.has_dimensions == 0 ",
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight",
+   "mandatory_depends_on": "eval:doc.mode == \"FCL\"",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_qwzp",
+   "fieldtype": "Column Break",
+   "precision": "2"
+  },
+  {
+   "default": "20GP",
+   "depends_on": "eval:doc.mode == \"FCL\"",
+   "fieldname": "container_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Container Type",
+   "mandatory_depends_on": "eval:doc.mode == \"FCL\"",
+   "options": "Container Type"
+  },
+  {
+   "default": "KG",
+   "depends_on": "eval:doc.mode != \"AIR\"  && doc.has_dimensions == 0 ",
+   "fieldname": "weight_unit",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Weight Unit",
+   "mandatory_depends_on": "eval:doc.mode == \"FCL\"",
+   "options": "\nKG\nLB",
+   "precision": "2"
+  },
+  {
+   "fieldname": "section_break_eqny",
+   "fieldtype": "Section Break",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_71fh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_selected",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Selected",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.is_selected==1 && doc.items.length==0",
+   "fieldname": "get_item",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Get Item"
+  },
+  {
+   "fieldname": "section_break_gwvk",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Schedule and Rate Item"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "RATE-"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.mode == \"LCL\" && doc.has_dimensions == 0 ",
+   "fieldname": "volume",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Volume",
+   "precision": "2"
+  },
+  {
+   "default": "CBM",
+   "depends_on": "eval:doc.mode == \"LCL\" && doc.has_dimensions == 0 ",
+   "fieldname": "volume_unit",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Volume Unit",
+   "options": "\nCBM\nCFT"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.mode == \"LCL\"",
+   "fieldname": "has_dimensions",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Has Dimensions"
+  },
+  {
+   "depends_on": "eval:doc.mode == \"LCL\" && doc.has_dimensions",
+   "fieldname": "dimensions",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dimensions"
+  },
+  {
+   "default": "CY",
+   "depends_on": "eval:doc.mode == \"FCL\"",
+   "fieldname": "origin_service_mode",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Origin Service Mode",
+   "mandatory_depends_on": "eval:doc.mode == \"FCL\"",
+   "options": "\nCY\nSD\nCY/SD"
+  },
+  {
+   "default": "SD",
+   "depends_on": "eval:doc.mode == \"FCL\"",
+   "fieldname": "destination_service_mode",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Destination Service Mode",
+   "mandatory_depends_on": "eval:doc.mode == \"FCL\"",
+   "options": "\nCY\nSD\nCY/SD"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Request for Quotation",
+   "link_fieldname": "custom_reference_name"
+  },
+  {
+   "link_doctype": "Supplier Quotation",
+   "link_fieldname": "custom_reference_name"
+  },
+  {
+   "link_doctype": "Purchase Order",
+   "link_fieldname": "custom_reference_name"
+  },
+  {
+   "link_doctype": "Quotation",
+   "link_fieldname": "custom_reference_name"
+  },
+  {
+   "link_doctype": "Sales Order",
+   "link_fieldname": "custom_reference_name"
+  },
+  {
+   "link_doctype": "Freightify Shipment",
+   "link_fieldname": "reference_name"
+  }
+ ],
+ "modified": "2024-11-27 17:01:24.858750",
+ "modified_by": "Administrator",
+ "module": "Freightify",
+ "name": "Shipment Rate",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

@@ -1,0 +1,596 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-15 18:43:53.378053",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hbl_no",
+  "isf_filing",
+  "quotation_no",
+  "customer",
+  "sales",
+  "column_break_eape",
+  "office",
+  "shipper",
+  "bill_to",
+  "forwarding_agent",
+  "column_break_4kfo",
+  "ams_no",
+  "consignee",
+  "sub_bl_no",
+  "isf_matched_date",
+  "column_break_izes",
+  "isf_no",
+  "notify",
+  "op",
+  "section_break_18tl",
+  "customs_broker",
+  "place_of_delivery",
+  "delivery_location",
+  "edit_rail",
+  "rail",
+  "g_o_date",
+  "column_break_pgdj",
+  "trucker",
+  "place_of_delivery_date",
+  "ship_mode",
+  "it_no",
+  "expiry_date",
+  "column_break_zoz4",
+  "cy_cfs_location",
+  "final_destination",
+  "freight",
+  "it_date",
+  "column_break_2rd7",
+  "available",
+  "final_eta",
+  "lfd",
+  "it_issued_location",
+  "section_break_nmod",
+  "express_bl_yes",
+  "express_bl_no",
+  "door_move",
+  "cclearance",
+  "chold",
+  "business_referred_by",
+  "obl_received",
+  "telex_release_received",
+  "freight_released_date",
+  "an_sent_date",
+  "column_break_fvdl",
+  "sales_type",
+  "creleased_date",
+  "entry_no",
+  "ror",
+  "released_by",
+  "do_sent_date",
+  "edit_do_sent_date",
+  "column_break_abst",
+  "incoterms",
+  "entry_doc_sent",
+  "hold",
+  "door_delivered",
+  "more",
+  "column_break_rdua",
+  "cargo_type",
+  "container_qty",
+  "section_break_ulq1",
+  "lc_no",
+  "group_comm",
+  "column_break_uig6",
+  "ship_type",
+  "line_code",
+  "column_break_bvhh",
+  "sc_no",
+  "e_commerce",
+  "column_break_dxvu",
+  "name_account",
+  "customs_doc"
+ ],
+ "fields": [
+  {
+   "fieldname": "hbl_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "HB/L No",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "isf_filing",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "ISF Filing By 3rd Party"
+  },
+  {
+   "fieldname": "quotation_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quotation No"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "sales",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sales"
+  },
+  {
+   "fieldname": "column_break_eape",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "office",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Office"
+  },
+  {
+   "fieldname": "shipper",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shipper"
+  },
+  {
+   "fieldname": "bill_to",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bill To"
+  },
+  {
+   "fieldname": "forwarding_agent",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Forwarding Agent"
+  },
+  {
+   "fieldname": "column_break_4kfo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ams_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "AMS No"
+  },
+  {
+   "fieldname": "consignee",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Consignee"
+  },
+  {
+   "fieldname": "sub_bl_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sub B/L No"
+  },
+  {
+   "fieldname": "isf_matched_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "ISF Matched Date"
+  },
+  {
+   "fieldname": "column_break_izes",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "isf_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ISF No"
+  },
+  {
+   "fieldname": "notify",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Notify"
+  },
+  {
+   "fieldname": "op",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "OP"
+  },
+  {
+   "fieldname": "section_break_18tl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customs_broker",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customs Broker"
+  },
+  {
+   "fieldname": "place_of_delivery",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Place of Delivery (DEL)"
+  },
+  {
+   "fieldname": "delivery_location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Delivery Location"
+  },
+  {
+   "default": "0",
+   "fieldname": "edit_rail",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Edit Rail"
+  },
+  {
+   "fieldname": "rail",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Rail",
+   "options": "\nUnion Pacific\nBNSF\nCanadian National\nCanadian Pacific\nNorfolk Southern\nOthers",
+   "read_only_depends_on": "eval:doc.edit_rail==0"
+  },
+  {
+   "fieldname": "g_o_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "G.O Date",
+   "options": "\n"
+  },
+  {
+   "fieldname": "trucker",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trucker"
+  },
+  {
+   "fieldname": "place_of_delivery_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Place of Delivery ETA"
+  },
+  {
+   "fieldname": "ship_mode",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Ship Mode",
+   "options": "FCL\nLCL\nFAK\nBULK"
+  },
+  {
+   "fieldname": "it_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "IT No"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "cy_cfs_location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CY/CFS Location"
+  },
+  {
+   "fieldname": "final_destination",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Final Destination"
+  },
+  {
+   "fieldname": "freight",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Freight",
+   "options": "COLLECT\nPREPAID"
+  },
+  {
+   "fieldname": "it_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "IT Date"
+  },
+  {
+   "fieldname": "available",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Available"
+  },
+  {
+   "fieldname": "final_eta",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Final ETA"
+  },
+  {
+   "fieldname": "lfd",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "LFD"
+  },
+  {
+   "fieldname": "it_issued_location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "IT Issued Location"
+  },
+  {
+   "fieldname": "column_break_pgdj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zoz4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_2rd7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_nmod",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "express_bl_yes",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Express BL Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "express_bl_no",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Express BL No"
+  },
+  {
+   "default": "0",
+   "fieldname": "door_move",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Door Move"
+  },
+  {
+   "default": "0",
+   "fieldname": "cclearance",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "C.Clearance"
+  },
+  {
+   "default": "0",
+   "fieldname": "chold",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "C.Hold"
+  },
+  {
+   "fieldname": "business_referred_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Business Referred By"
+  },
+  {
+   "depends_on": "eval:doc.express_bl_no==1",
+   "fieldname": "obl_received",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "OBL Received"
+  },
+  {
+   "depends_on": "eval:doc.express_bl_yes==1",
+   "fieldname": "telex_release_received",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Telex Release Received"
+  },
+  {
+   "fieldname": "an_sent_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "AN Sent Date"
+  },
+  {
+   "fieldname": "column_break_fvdl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sales Type"
+  },
+  {
+   "fieldname": "creleased_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "C.Released Date"
+  },
+  {
+   "fieldname": "entry_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Entry No"
+  },
+  {
+   "default": "0",
+   "fieldname": "ror",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "ROR"
+  },
+  {
+   "fieldname": "released_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Released By"
+  },
+  {
+   "fieldname": "do_sent_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "DO Sent Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "edit_do_sent_date",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Edit DO Sent Date"
+  },
+  {
+   "fieldname": "column_break_abst",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "incoterms",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Incoterms",
+   "options": "Incoterm"
+  },
+  {
+   "fieldname": "entry_doc_sent",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Entry DOC Sent"
+  },
+  {
+   "default": "0",
+   "fieldname": "hold",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Hold"
+  },
+  {
+   "fieldname": "door_delivered",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Door Delivered"
+  },
+  {
+   "default": "0",
+   "fieldname": "more",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "More"
+  },
+  {
+   "fieldname": "column_break_rdua",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "GENERAL CARGO",
+   "fieldname": "cargo_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Cargo Type",
+   "options": "AUTOMOBILE (NON-HAZ)\nBATTERY\nGENERAL CARGO\nHAZARDOUS\nREFRIGERATED\nSPECIAL"
+  },
+  {
+   "fieldname": "container_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Container Qty",
+   "precision": "0"
+  },
+  {
+   "fieldname": "section_break_ulq1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "lc_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "LC No"
+  },
+  {
+   "fieldname": "group_comm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Group Comm"
+  },
+  {
+   "fieldname": "column_break_uig6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ship_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Ship Type",
+   "options": "Normal\nS/W\nT/S"
+  },
+  {
+   "fieldname": "line_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Line Code"
+  },
+  {
+   "fieldname": "column_break_bvhh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sc_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SC No"
+  },
+  {
+   "default": "0",
+   "fieldname": "e_commerce",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "E Commerce"
+  },
+  {
+   "fieldname": "column_break_dxvu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name_account",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name Account"
+  },
+  {
+   "default": "0",
+   "fieldname": "customs_doc",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Customs Doc"
+  },
+  {
+   "fieldname": "freight_released_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Freight Released Date",
+   "read_only_depends_on": "eval:doc.express_bl_no==1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-16 11:41:10.704050",
+ "modified_by": "Administrator",
+ "module": "Freightify",
+ "name": "HBL Info",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
