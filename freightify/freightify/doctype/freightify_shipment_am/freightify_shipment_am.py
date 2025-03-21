@@ -10,7 +10,7 @@ import frappe.utils
 from frappe.model.mapper import get_mapped_doc
 
 
-class FreightifyShipment(Document):
+class FreightifyShipmentAm(Document):
 	def before_submit(self):
 		update_shipped_qty_in_so(method="before_submit",self=self)
 		
